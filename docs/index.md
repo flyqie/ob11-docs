@@ -1,10 +1,5 @@
 # 介绍
 
-- [背景](#背景)
-- [动机](#动机)
-- [预期](#预期)
-- [内容目录](#内容目录)
-
 OneBot 标准是从原 CKYU 平台的 CQHTTP 插件接口修改而来的通用聊天机器人应用接口标准。
 
 ## 背景
@@ -28,28 +23,3 @@ CQHTTP 插件是 2017 年初出现的基于 CKYU 机器人平台的一款开源�
 开发者可以在各类机器人平台实现 OneBot 标准，从而使用户可以将基于 OneBot 标准的机器人项目无缝迁移到这些平台。
 
 当需要添加新的功能（例如新的事件、API、消息段类型等）时，可以通过 pull request 扩充本标准，此后其它 OneBot 实现在添加同一功能时应参考扩充后的标准。
-
-## 内容目录
-
-- **通信**
-  - [通信概述](communication/README.md)
-  - [HTTP](communication/http.md)
-  - [HTTP POST](communication/http-post.md)
-  - [正向 WebSocket](communication/ws.md)
-  - [反向 WebSocket](communication/ws-reverse.md)
-  - [鉴权](communication/authorization.md)
-- **消息**
-  - [消息概述](message/README.md)
-  - [字符串格式](message/string.md)
-  - [数组格式](message/array.md)
-  - [消息段类型](message/segment.md)
-- **API**
-  - [API 概述](api/README.md)
-  - [公开 API](api/public.md)
-  - [隐藏 API](api/hidden.md)
-- **事件**
-  - [事件概述](event/README.md)
-  - [消息事件](event/message.md)
-  - [通知事件](event/notice.md)
-  - [请求事件](event/request.md)
-  - [元事件](event/meta.md)

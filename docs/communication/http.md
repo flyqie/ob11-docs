@@ -1,9 +1,5 @@
 # HTTP
 
-- [请求](#请求)
-- [响应](#响应)
-- [相关配置](#相关配置)
-
 OneBot 在启动时开启一个 HTTP 服务器，监听配置文件指定的 IP 和端口，接受路径为 `/:action` 的 API 请求（或 `/:action/`），如 `/send_private_msg`，请求可以使用 GET 或 POST 方法，可以通过 query 参数（`?arg1=111&arg2=222`）、urlencoded 表单（`arg1=111&arg2=222`）或 JSON（`{"arg1": "111", "arg2": "222"}`）传递参数。
 
 参数可能有不同的类型，当用户通过 query 参数或 urlencoded 表单传参，或在 JSON 中使用字符串作为参数值时，OneBot 实现需要从字符串解析出对应类型的数据。
@@ -75,9 +71,3 @@ Content-Type: application/json
 | `http.enable` | `true` | 是否启用 HTTP |
 | `http.host` | `0.0.0.0` | HTTP 服务器监听的 IP |
 | `http.port` | `5700` | HTTP 服务器监听的端口 |
-
-<hr>
-
-| 上一节 | 下一节 |
-| --- | --- |
-| [通信概述](README.md) | [HTTP POST](http-post.md) |

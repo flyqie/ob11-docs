@@ -1,10 +1,5 @@
 # HTTP POST
 
-- [上报](#上报)
-- [签名](#签名)
-- [快速操作](#快速操作)
-- [相关配置](#相关配置)
-
 OneBot 在收到事件后，向配置指定的事件上报 URL 通过 POST 请求发送事件数据，事件数据以 JSON 格式表示。请求结束后，OneBot 处理用户返回的响应中的「快速操作」，如快速回复、快速禁言等。
 
 ## 上报
@@ -118,9 +113,3 @@ ctx.assert(ctx.request.headers['x-signature'] === `sha1=${sig}`, 403);
 | `http_post.url` | 空 | 事件上报 URL |
 | `http_post.timeout` | `0` | HTTP 上报超时时间，单位秒，0 表示不设置超时 |
 | `http_post.secret` | 空 | 上报数据签名密钥 |
-
-<hr>
-
-| 上一节 | 下一节 |
-| --- | --- |
-| [HTTP](http.md) | [正向 WebSocket](ws.md) |
