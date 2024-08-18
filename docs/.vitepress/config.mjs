@@ -6,6 +6,7 @@ export default defineConfig({
   cleanUrls: true,
   metaChunk: true,
   description: 'Onebot-11-Docs',
+  base: '/ob11-docs/',
   themeConfig: {
     sidebar: [
 	  {
